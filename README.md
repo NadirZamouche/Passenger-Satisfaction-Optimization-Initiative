@@ -34,3 +34,29 @@ The satisfaction.csv file contains the following information:
 - Departure delay in Minutes: Minutes of delay on departure.
 - Arrival Delay in Minutes: Minutes of delay on arrival.
 - Satisfaction: Level of airline satisfaction (Satisfaction, neural or dissatisfaction).
+
+## :mag: Data Pre-processing
+* Filled missing values using mean strategy.
+* Changed certain satisfaction columns where their values were equal to 0 to 3 (mean) as clarified in the specifications (0: Not Applicable; 1-5).
+* Dropped rows where their object column values were missing since they only represented a very small portion of the whole data around 2%.
+* Deleted columns where their values were sequentially assigned numbers, such as IDs.
+* Merged 'Departure Delay in Minutes' and 'Arrival Delay in Minutes' into one column called 'Total Delay' by adding their values.
+* Applied label (binary) and ordinal encoders to the appropriate object columns.
+* Created boxplots for each column to check for outliers. Here is a box plot for Flight Distance column:
+
+<img width="547" alt="Box Plot for Flight Distance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/940ac44e-76b3-479e-8201-8a6efb22c8a0">
+
+
+* Ploted histograms for each column to see if the data is balanced or not:
+
+<img width="750" alt="Histograms" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/58d7c6dd-d740-4d79-bc1c-0a5cb7551966">
+
+
+* Ploted heat map for correlation matrix:
+
+<img width="684" alt="Correlation Matrix" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/70088bc4-26f4-424b-a427-df928af540fb">
+
+The correlation Matrix shows that there is:
+- Moderate negative relationship between "Type of travel" and the target column "Satisfaction" (-0.45): meaning that when "Type of travel" is 0 (Business travel) the passenger is satisfied and when it's 1 (Personal travel) their satisfaction is often neutral or dissatisfied.
+- Moderate positive relationship between "Class, Online boarding" and the target column "satisfaction" (0.49 & 0.55).
+Weak positive relationship between "Inflight entertainement, Seat comfort, On-boarding service, Leg room service & Cleanliness" and the target column "satisfaction" (0.4, 0.35, 0.32, 0.31 & 0.31 respectively).
