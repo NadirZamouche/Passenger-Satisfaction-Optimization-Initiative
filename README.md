@@ -66,18 +66,18 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 
 ## :desktop_computer:	Modeling
 * Utilizing the previous data pipeline. I partitioned the data into two sets: 75% designated for training and 25% allocated for testing. Also, I used the StratifiedShuffleSplit to ensure representative stratification across the dataset.
-* Employed 6 distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics for each model and discerned the optimal choice based on the precision score.
+* Employed 6 distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics for each model and discerned the optimal choice based on the precision score:
 
 <img width="648" alt="ROC Curve" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/7e6dc0aa-5c78-4637-86d1-fc6a2f0f09fa">
 
 <img width="441" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/3f0b6166-7dc0-4c65-b4c3-b51bed0d0243">
 
-* Conducted hyper-parameter tuning for eXtream Gradient Boosting Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance.
+* Conducted hyper-parameter tuning for eXtream Gradient Boosting Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance:
 
 <img width="279" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a69d3508-176c-46d5-b636-1d59cd2f3451">
 
 
-* Tested the final model on the test set and got even better results :
+* Tested the final model on the test set and got even better results:
 
 <img width="137" alt="Evaluation Metrics (Test Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b377805a-e4db-43d5-b9ac-194ccfb4d387">
 
@@ -90,3 +90,39 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 * Here is a chart showing the sorted contribution of each column to the target column "satisfaction":
 
 <img width="640" alt="Feature Importance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a94f7ce0-f0f7-4f94-ab42-4ce7010b7c28">
+
+## 🎯 Recommendations
+* I tweaked the top 5 contributing features' values:
+  - AVG_Work_Time: capped at 8 Hours (turnover count: 711 -> 703).
+  - Age: increased it by 10 years (turnover count: 711 -> 633).
+  - TotalWorkingYears: increased it by 5 years (turnover count: 711 -> 686).
+  - MonthlyIncome: increased it by 20.000 Indian Rupees that's $240 "March 2024" (turnover count: 711 -> 695).
+  - YearsAtCompany: increased it by 10 years (turnover count: 711 -> 684).
+  - ALL combined turnover count went from 711 to 119.
+
+* Here some recommendations to reduce turnover rate:
+  - Avoid crunch time at any cost.
+  - Consider offering flexible working hours to further support employee well-being and retention.
+  - Communicate transparently with employees about the reasons behind the adjustment in working hours.
+  - Gather feedback from employees to understand how the adjusted working hours have impacted their satisfaction.
+  - Prioritize retention efforts for younger employees to mitigate turnover risks.
+  - Develop robust onboarding and career advancement programs for early-career professionals.
+  - Cultivate a supportive work environment that addresses the needs and aspirations of younger talent.
+  - Strengthen onboarding programs to effectively integrate new employees into the company culture and workflows, fostering a sense of belonging and commitment from the outset.
+  - Develop comprehensive career pathing initiatives that provide clear trajectories for professional growth and advancement within the organization. This can incentivize employees to stay long-term by offering opportunities for skill development and career progression.
+  - Implement mentorship programs to provide guidance and support to employees at various stages of their careers. Pairing less experienced employees with seasoned mentors can offer valuable insights, facilitate knowledge transfer, and enhance job satisfaction, thereby reducing turnover rates.
+  - Review and adjust compensation structures to ensure they remain competitive within the industry and region, aiming to attract and retain top talent.
+  - Offer additional benefits and perks aligned with employee preferences and needs, such as healthcare coverage, retirement plans, and wellness programs, to enhance overall job satisfaction and loyalty.
+  - Conduct regular salary benchmarking exercises to stay informed about market trends and adjust compensation packages accordingly to retain valuable employees.
+  - Strengthen onboarding processes to seamlessly integrate new employees into the company culture and workflow.
+  - Implement initiatives to engage and support new hires during their initial months with the company.
+  - Proactively address any challenges or concerns faced by new employees to enhance their experience and retention.
+
+## 🔨 Conclusion
+The analysis demonstrates the profound impact of adjusting key factors on turnover rates. By reducing average worked time, increasing age, total working years, and tenure, turnover rate decreased significantly from about 16% to nearly 3%. This underscores the importance of tailored retention strategies focusing on employee engagement and career development. Moving forward, continuous evaluation and adaptation of these strategies are crucial for sustaining employee retention and organizational success.
+
+## 🔨 Conclusion
+The analysis highlights the importance of ocean proximity, particularly being inland, followed by island properties, in predicting house prices. Additionally, median income is also a significant factor in determining housing prices, although slightly less influential compared to ocean proximity. This information can be valuable for understanding the drivers of housing market dynamics and making informed decisions in real estate investments or policy-making.
+This model has shown very excellent results since the marginal error is very small, therfore it can be implemented for later use as you can see in this illustration:
+
+<img width="258" alt="Results" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/4ca5fba8-4bcb-4370-9d8b-4b050bb8197b">
