@@ -35,7 +35,7 @@ The satisfaction.csv file contains the following information:
 - Arrival Delay in Minutes: Minutes of delay on arrival.
 - Satisfaction: Level of airline satisfaction (Satisfaction, neural or dissatisfaction).
 
-## :mag: Data Pre-processing
+## :mag: Data Cleansing
 * Filled missing values using mean strategy.
 * Changed certain satisfaction columns where their values were equal to 0 to 3 (mean) as clarified in the specifications (0: Not Applicable; 1-5).
 * Dropped rows where their object column values were missing since they only represented a very small portion of the whole data around 2%.
@@ -60,3 +60,20 @@ The correlation Matrix shows that there is:
 - Moderate negative relationship between "Type of travel" and the target column "Satisfaction" (-0.45): meaning that when "Type of travel" is 0 (Business travel) the passenger is satisfied and when it's 1 (Personal travel) their satisfaction is often neutral or dissatisfied.
 - Moderate positive relationship between "Class, Online boarding" and the target column "satisfaction" (0.49 & 0.55).
 Weak positive relationship between "Inflight entertainement, Seat comfort, On-boarding service, Leg room service & Cleanliness" and the target column "satisfaction" (0.4, 0.35, 0.32, 0.31 & 0.31 respectively).
+
+* Applied the standard scaler since there were outliers within the data (as show in box plot).
+* Created the data pipeline encompassing all data preprocesing steps for later use in modeling.
+
+## :desktop_computer:	Modeling
+* Utilizing the previous data pipeline. I partitioned the data into two sets: 75% designated for training and 25% allocated for testing. Also, I used the StratifiedShuffleSplit to ensure representative stratification across the dataset.
+* Employed 6 distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics for each model and discerned the optimal choice based on the precision score.
+
+<img width="648" alt="ROC Curve" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/7e6dc0aa-5c78-4637-86d1-fc6a2f0f09fa">
+
+<img width="441" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/3f0b6166-7dc0-4c65-b4c3-b51bed0d0243">
+
+* Conducted hyper-parameter tuning for eXtream Gradient Boosting Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance.
+
+
+
+
