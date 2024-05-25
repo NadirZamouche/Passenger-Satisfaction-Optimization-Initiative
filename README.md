@@ -74,6 +74,19 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 
 * Conducted hyper-parameter tuning for eXtream Gradient Boosting Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance.
 
+<img width="279" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a69d3508-176c-46d5-b636-1d59cd2f3451">
 
 
+* Tested the final model on the test set and got even better results :
 
+<img width="137" alt="Evaluation Metrics (Test Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b377805a-e4db-43d5-b9ac-194ccfb4d387">
+
+
+* Retested the final model on the whole entry dataset and got excellent results:
+
+<img width="123" alt="Evaluation Metrics Whole Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/bf8ed98f-cb61-495a-a771-e358d22fb2fc">
+
+## :chart_with_upwards_trend: Feature Importance
+* Here is a chart showing the sorted contribution of each column to the target column "satisfaction":
+
+<img width="640" alt="Feature Importance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a94f7ce0-f0f7-4f94-ab42-4ce7010b7c28">
