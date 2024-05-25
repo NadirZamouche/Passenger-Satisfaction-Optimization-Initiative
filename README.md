@@ -93,36 +93,22 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 
 ## 🎯 Recommendations
 * I tweaked the top 5 contributing features' values:
-  - AVG_Work_Time: capped at 8 Hours (turnover count: 711 -> 703).
-  - Age: increased it by 10 years (turnover count: 711 -> 633).
-  - TotalWorkingYears: increased it by 5 years (turnover count: 711 -> 686).
-  - MonthlyIncome: increased it by 20.000 Indian Rupees that's $240 "March 2024" (turnover count: 711 -> 695).
-  - YearsAtCompany: increased it by 10 years (turnover count: 711 -> 684).
-  - ALL combined turnover count went from 711 to 119.
+  - Online boarding satisfaction: capped to at least 4.
+  - Type of Travel: changed to Business Travel (dissatisfactkon count: 14294 -> 10663).
+  - Class: changed to Business.
+  - Inflight wifi service satisfaction: increased to at least 4 (dissatisfactkon count: 14294 -> 12834).
+  - Customer Type: limited to Loyal Customers (dissatisfactkon count: 14294 -> 12704).
 
 * Here some recommendations to reduce turnover rate:
-  - Avoid crunch time at any cost.
-  - Consider offering flexible working hours to further support employee well-being and retention.
-  - Communicate transparently with employees about the reasons behind the adjustment in working hours.
-  - Gather feedback from employees to understand how the adjusted working hours have impacted their satisfaction.
-  - Prioritize retention efforts for younger employees to mitigate turnover risks.
-  - Develop robust onboarding and career advancement programs for early-career professionals.
-  - Cultivate a supportive work environment that addresses the needs and aspirations of younger talent.
-  - Strengthen onboarding programs to effectively integrate new employees into the company culture and workflows, fostering a sense of belonging and commitment from the outset.
-  - Develop comprehensive career pathing initiatives that provide clear trajectories for professional growth and advancement within the organization. This can incentivize employees to stay long-term by offering opportunities for skill development and career progression.
-  - Implement mentorship programs to provide guidance and support to employees at various stages of their careers. Pairing less experienced employees with seasoned mentors can offer valuable insights, facilitate knowledge transfer, and enhance job satisfaction, thereby reducing turnover rates.
-  - Review and adjust compensation structures to ensure they remain competitive within the industry and region, aiming to attract and retain top talent.
-  - Offer additional benefits and perks aligned with employee preferences and needs, such as healthcare coverage, retirement plans, and wellness programs, to enhance overall job satisfaction and loyalty.
-  - Conduct regular salary benchmarking exercises to stay informed about market trends and adjust compensation packages accordingly to retain valuable employees.
-  - Strengthen onboarding processes to seamlessly integrate new employees into the company culture and workflow.
-  - Implement initiatives to engage and support new hires during their initial months with the company.
-  - Proactively address any challenges or concerns faced by new employees to enhance their experience and retention.
-
+  - Conduct a detailed analysis to identify and address specific pain points.
+  - Improve the overall boarding journey, including pre-boarding and boarding.
+  - Maintain the premium in-flight services.
+  - Enhance services and amenities for non-business travelers.
+  - Enhance service quality, comfort, and additional amenities for non-business class passengers.
+  - Invest in faster and more reliable internet access.
+  - Offer different tiers of service to cater to varying customer needs.
+  - Reward frequent flyers with personalized services and benefits.
+  - Focus on maintaining and improving satisfaction among loyal customers.
+  
 ## 🔨 Conclusion
-The analysis demonstrates the profound impact of adjusting key factors on turnover rates. By reducing average worked time, increasing age, total working years, and tenure, turnover rate decreased significantly from about 16% to nearly 3%. This underscores the importance of tailored retention strategies focusing on employee engagement and career development. Moving forward, continuous evaluation and adaptation of these strategies are crucial for sustaining employee retention and organizational success.
-
-## 🔨 Conclusion
-The analysis highlights the importance of ocean proximity, particularly being inland, followed by island properties, in predicting house prices. Additionally, median income is also a significant factor in determining housing prices, although slightly less influential compared to ocean proximity. This information can be valuable for understanding the drivers of housing market dynamics and making informed decisions in real estate investments or policy-making.
-This model has shown very excellent results since the marginal error is very small, therfore it can be implemented for later use as you can see in this illustration:
-
-<img width="258" alt="Results" src="https://github.com/NadirZamouche/HouseValue-Forecast/assets/95188070/4ca5fba8-4bcb-4370-9d8b-4b050bb8197b">
+To effectively enhance overall customer satisfaction, the airline should prioritize enhancing services for non-business travelers, investing in reliable inflight WiFi, and strengthening loyalty programs. These targeted strategies address key areas that directly impact customer experience and satisfaction, leading to a more satisfied and loyal customer base.
