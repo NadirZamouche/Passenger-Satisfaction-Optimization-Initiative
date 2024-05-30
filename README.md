@@ -95,21 +95,19 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 ## 🎯 Recommendations
 * I tweaked the top 5 contributing features' values:
   - Online boarding satisfaction: capped to at least 4.
-  - Type of Travel: changed to Business Travel (dissatisfactkon count: 14294 -> 10663).
+  - Inflight wifi service satisfaction: increased to at least 4.
+  - Type of Travel: changed to Business Travel.
   - Class: changed to Business.
-  - Inflight wifi service satisfaction: increased to at least 4 (dissatisfactkon count: 14294 -> 12834).
-  - Customer Type: limited to Loyal Customers (dissatisfactkon count: 14294 -> 12704).
+  - Inflight entertainment satisfaction: increased to at least 4.
 
 * Here some recommendations to reduce dissatisfaction rate:
   - Conduct a detailed analysis to identify and address specific pain points.
   - Improve the overall boarding journey, including pre-boarding and boarding.
   - Maintain the premium in-flight services.
-  - Enhance services and amenities for non-business travelers.
+  - Enhance services and amenities for non-buisness travelers.
   - Enhance service quality, comfort, and additional amenities for non-business class passengers.
   - Invest in faster and more reliable internet access.
   - Offer different tiers of service to cater to varying customer needs.
-  - Reward frequent flyers with personalized services and benefits.
-  - Focus on maintaining and improving satisfaction among loyal customers.
   
 ## 🔨 Conclusion
-To effectively enhance overall customer satisfaction, the airline should prioritize enhancing services for non-business travelers, investing in reliable inflight WiFi, and strengthening loyalty programs. These targeted strategies address key areas that directly impact customer experience and satisfaction, leading to a more satisfied and loyal customer base.
+To effectively enhance overall customer satisfaction, the airline should prioritize simplifying the online check-in process, enhancing services for non-business travelers, investing in reliable inflight WiFi services and entertainment programs. These targeted strategies address key areas that directly impact customer experience and satisfaction, leading to a more satisfied and loyal customer base.
