@@ -73,7 +73,7 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 <img width="449" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/5a9cab53-392e-420b-a746-0f0b4209b381">
 
 
-* Conducted hyper-parameter tuning for eXtream Gradient Boosting Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance:
+* Conducted hyper-parameter tuning for Random Forest Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance:
 
 <img width="196" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b3bbe847-32e1-467a-ab01-7b02de1f76c5">
 
