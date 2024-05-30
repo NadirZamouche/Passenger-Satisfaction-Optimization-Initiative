@@ -68,28 +68,29 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 * Utilizing the previous data pipeline. I partitioned the data into two sets: 75% designated for training and 25% allocated for testing. Also, I used the StratifiedShuffleSplit to ensure representative stratification across the dataset.
 * Employed 6 distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics for each model and discerned the optimal choice based on the precision score:
 
-<img width="648" alt="ROC Curve" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/7e6dc0aa-5c78-4637-86d1-fc6a2f0f09fa">
+<img width="669" alt="ROC Curve" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a56e1579-7c65-4401-bd0c-bbcda124b475">
 
-<img width="441" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/3f0b6166-7dc0-4c65-b4c3-b51bed0d0243">
+<img width="449" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/5a9cab53-392e-420b-a746-0f0b4209b381">
+
 
 * Conducted hyper-parameter tuning for eXtream Gradient Boosting Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance:
 
-<img width="279" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a69d3508-176c-46d5-b636-1d59cd2f3451">
-
+<img width="196" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b3bbe847-32e1-467a-ab01-7b02de1f76c5">
 
 * Tested the final model on the test set and got even better results:
 
-<img width="137" alt="Evaluation Metrics (Test Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b377805a-e4db-43d5-b9ac-194ccfb4d387">
-
+<img width="135" alt="Evaluation Metrics (Test Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/6bda5179-1d86-4c08-90e7-61f01b53456a">
 
 * Retested the final model on the whole entry dataset and got excellent results:
 
-<img width="123" alt="Evaluation Metrics Whole Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/bf8ed98f-cb61-495a-a771-e358d22fb2fc">
+<img width="112" alt="Evaluation Metrics (Whole Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a65b2778-896a-4c5c-ac03-96516d37491f">
+
 
 ## :chart_with_upwards_trend: Feature Importance
 * Here is a chart showing the sorted contribution of each column to the target column "satisfaction":
 
-<img width="640" alt="Feature Importance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a94f7ce0-f0f7-4f94-ab42-4ce7010b7c28">
+<img width="572" alt="Feature Importance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b3e8f439-ca1c-4f54-a9b3-2fcdcce8567c">
+
 
 ## 🎯 Recommendations
 * I tweaked the top 5 contributing features' values:
@@ -99,7 +100,7 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
   - Inflight wifi service satisfaction: increased to at least 4 (dissatisfactkon count: 14294 -> 12834).
   - Customer Type: limited to Loyal Customers (dissatisfactkon count: 14294 -> 12704).
 
-* Here some recommendations to reduce turnover rate:
+* Here some recommendations to reduce dissatisfaction rate:
   - Conduct a detailed analysis to identify and address specific pain points.
   - Improve the overall boarding journey, including pre-boarding and boarding.
   - Maintain the premium in-flight services.
