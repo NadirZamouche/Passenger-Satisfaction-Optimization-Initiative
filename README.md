@@ -68,28 +68,29 @@ Weak positive relationship between "Inflight entertainement, Seat comfort, On-bo
 * Utilizing the previous data pipeline. I partitioned the data into two sets: 75% designated for training and 25% allocated for testing. Also, I used the StratifiedShuffleSplit to ensure representative stratification across the dataset.
 * Employed 6 distinct classification models, systematically assessing for overfitting through cross-validation techniques. Subsequently, I computed various evaluation metrics for each model and discerned the optimal choice based on the precision score:
 
-<img width="669" alt="ROC Curve" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a56e1579-7c65-4401-bd0c-bbcda124b475">
+<img width="482" alt="ROC Curve" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/ab9ef452-f96a-4a41-bdfa-a25870db30f6">
 
-<img width="449" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/5a9cab53-392e-420b-a746-0f0b4209b381">
+<img width="453" alt="Evaluation Metrics" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/05c08250-d426-4774-b35e-176866f58c35">
 
 
 * Conducted hyper-parameter tuning for Random Forest Classifier, meticulously exploring various settings to ascertain the most effective combination for optimal performance:
 
-<img width="196" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b3bbe847-32e1-467a-ab01-7b02de1f76c5">
+<img width="212" alt="Best Parameters Combination" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/399cdad4-1abf-4cca-91d0-f033cef99afd">
+
 
 * Tested the final model on the test set and got even better results:
 
-<img width="135" alt="Evaluation Metrics (Test Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/6bda5179-1d86-4c08-90e7-61f01b53456a">
+<img width="148" alt="Evaluation Metrics (Test Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/f7fc6a0e-a765-4022-928e-2156672640f9">
 
 * Retested the final model on the whole entry dataset and got excellent results:
 
-<img width="112" alt="Evaluation Metrics (Whole Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/a65b2778-896a-4c5c-ac03-96516d37491f">
+<img width="114" alt="Evaluation Metrics (Whole Set)" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/d241a528-09e5-41e2-aae6-7eefad4f9f9d">
 
 
 ## :chart_with_upwards_trend: Feature Importance
 * Here is a chart showing the sorted contribution of each column to the target column "satisfaction":
 
-<img width="572" alt="Feature Importance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/b3e8f439-ca1c-4f54-a9b3-2fcdcce8567c">
+<img width="458" alt="Feature Importance" src="https://github.com/NadirZamouche/Passenger-Satisfaction-Optimization-Initiative/assets/95188070/86278cb7-adcd-45ad-83b5-7fc209b3b6a5">
 
 
 ## 🎯 Recommendations
